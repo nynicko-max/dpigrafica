@@ -3,25 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primer Sitio Web</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f9;
-            margin-top: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-            font-size: 18px;
-        }
-    </style>
+    <title>Mi Sitio Web Profesional</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>¡Hola, mundo!</h1>
-    <p>Este es mi primer sitio web publicado en la nube.</p>
+
+    <!-- Encabezado y Navegación -->
+    <header class="navbar">
+        <div class="logo">MiMarca</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Inicio / Banner Principal -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Diseño y soluciones a tu medida</h1>
+            <p>Transformamos ideas en proyectos reales con acabados de alta calidad.</p>
+            <a href="#contacto" class="btn">Contáctanos</a>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="contenedor">
+        <h2>Nuestros Servicios</h2>
+        <div class="grid-servicios">
+            <div class="card">
+                <h3>Diseño Estructural</h3>
+                <p>Desarrollo de empaques, planos técnicos y soluciones a medida para tu marca.</p>
+            </div>
+            <div class="card">
+                <h3>Identidad Visual</h3>
+                <p>Creación de logotipos, branding y conceptos visuales atractivos.</p>
+            </div>
+            <div class="card">
+                <h3>Impresión & Acabados</h3>
+                <p>Asesoría en producción, acabados especiales y materiales de alta gama.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería de Fotos -->
+    <section id="galeria" class="contenedor fondo-gris">
+        <h2>Galería de Proyectos</h2>
+        <div class="grid-galeria">
+            <!-- Usamos imágenes de prueba de Unsplash que cargan directo desde la web -->
+            <div class="foto-item">
+                <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600&auto=format&fit=crop" alt="Proyecto 1">
+                <p>Diseño y Estructura</p>
+            </div>
+            <div class="foto-item">
+                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=600&auto=format&fit=crop" alt="Proyecto 2">
+                <p>Packaging & Marca</p>
+            </div>
+            <div class="foto-item">
+                <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=600&auto=format&fit=crop" alt="Proyecto 3">
+                <p>Prototipado</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contenedor">
+        <h2>Contacto</h2>
+        <p>¿Tienes un proyecto en mente? Escríbenos y te responderemos a la brevedad.</p>
+        <form class="formulario">
+            <input type="text" placeholder="Tu Nombre" required>
+            <input type="email" placeholder="Tu Correo Electrónico" required>
+            <textarea rows="4" placeholder="Tu Mensaje" required></textarea>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 MiMarca. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
